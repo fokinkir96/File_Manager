@@ -1,7 +1,8 @@
-import config, Commands
+from config import ROOT
+import Commands
 
 cmd = ''
-cmds = Commands.Commands(config.ROOT)
+cmds = Commands.Commands(ROOT)
 
 while cmd != 'exit':
     cmd = input('Введите команду: ').split()
@@ -15,4 +16,8 @@ while cmd != 'exit':
         print('Команды не существует')
         continue
 
-    print(cmd(*args))
+    # print(cmd(*args))
+    try:
+        cmd(*args)
+    except Exception as e:
+        print(e)

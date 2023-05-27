@@ -1,4 +1,4 @@
-ROOT = '/home/kirill/Files/Projects/PycharmProjects/Practicum4sem/FileManager/test/'
+ROOT = r'E:\Projects\PycharmProjects\Practicum4sem\FileManager\test'
 
 
 
